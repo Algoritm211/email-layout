@@ -37,15 +37,18 @@
 	font-style: normal;
 }
 
-@media (max-width: 400px) {
-  body {
-    background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/Mobile%20bg.svg) center center/cover no-repeat;
+@media (max-width: 500px) {
+  #main {
+    display: flex;
+    background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/Mobile%20bg.png) center center/cover no-repeat;
   }
 }
 
-@media (min-width: 400px) {
-  body {
-    background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/web%20bg.svg) center center/cover no-repeat;
+@media (min-width: 500px) {
+ #main {
+   display: flex;
+   align-items: center;
+   background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/web%20bg.png) center center/cover no-repeat;
   }
 }
 
@@ -61,18 +64,41 @@ a {
 .footer-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 300px;
 }
 
+@media (max-width: 700px) {
+  .footer-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-links {
+    width: 150px;
+  }
+}
+
+@media (min-width: 700px) {
+  .footer-info {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .social-links {
+    width: 200px;
+  }
+}
+
 .social-links {
-  height: 100%;
+  height: 150px;
   display: flex;
   justify-content: space-between;
 }
 
 .main-block {
   display: flex;
+  flex-direction: row;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -80,19 +106,14 @@ a {
 .link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 15px;
-}
-
-.link img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 15px 15px 15px 0;
 }
 
 @media (min-width: 700px) {
   .desktop-image {
-    margin-right: 200px;
+    display: block;
+    margin-right: 150px;
   }
 }
 
@@ -103,3 +124,14 @@ a {
 }
 
 
+@media (min-width: 700px) {
+  .table {
+    padding: 80px 20px 80px 125px;
+  }
+}
+
+@media (max-width: 700px) {
+  .table {
+    padding: 80px 16px;
+  }
+}
