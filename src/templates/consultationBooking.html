@@ -1,0 +1,108 @@
+---
+username: 'Nika'
+datetime: '10 июля в 09:30 (Cуббота)'
+psychologist: 'Татьяна Ремесник'
+duration: '50'
+consultationLink: 'https://videochat.mindly.cc/0n9aX3'
+---
+<extends src="src/layouts/main.html">
+  <block name="template">
+    <div class="main-block">
+      <table class="w-full bg-white-100 pr-16px pl-16px " style='padding: 80px 16px;'>
+        <tr>
+        <tr>
+          <td style="font-size: 20px; line-height: 60px; font-weight: bold;">
+            Консультация забронирована
+          </td>
+        </tr>
+        <tr>
+          <td style="font-size: 18px; line-height: 24px;">
+            <div style="margin-bottom: 24px;">
+              Здравствуйте {{ page.username }}
+            </div>
+          </td>
+        </tr>
+        <tr style="font-size: 18px; line-height: 24px;">
+          <td>
+            <div style="margin-bottom: 24px;">
+              <div>Дата и время: <b>{{page.datetime}}</b></div>
+              <div>Специалист: <b>{{page.psychologist}}</b></div>
+              <div>Длительность консультации: <b>{{page.duration}}</b></div>
+            </div>
+          </td>
+        </tr>
+        <tr style="font-size: 18px; line-height: 24px;">
+          <td>
+            <div style='margin-bottom: 48px;'>
+              <b>Чтобы начать онлайн сессию, воспользуйтесь ссылкой:</b>
+              <div>
+                <a href="{{ page.consultationLink }}">{{ page.consultationLink }}</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr style="font-size: 18px; line-height: 24px;">
+          <td>
+            <div style="margin-bottom: 24px;">
+              <div>С уважением,</div>
+              <div>Команда Mindly</div>
+            </div>
+          </td>
+        </tr>
+        <tr style="font-size: 16px; line-height: 24px;">
+          <td>
+            <div class="footer-info">
+              <div>
+                <div>Ул. Крещатик 10</div>
+                <div>г. Киев, 01001</div>
+                <div>Сайт <a href="mindly.cc">mindly.cc</a></div>
+              </div>
+              <div class="social-links">
+                <div class="display: flex; justify-content: space-between;">
+                  <div class="link">
+                    <a href="https://cutt.ly/WtJqhB1">
+                      <img src="https://storage.googleapis.com/mindly-picture-storage/email_images/001-viber.svg">
+                    </a>
+                  </div>
+                  <div class="link">
+                    <a href="https://goo.su/0oz5">
+                      <img src="https://storage.googleapis.com/mindly-picture-storage/email_images/005-instagram.svg">
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <div class="link">
+                    <a href="https://www.youtube.com/channel/UC3VMicql_QT0DnS0MMzRi4w">
+                      <img src="https://storage.googleapis.com/mindly-picture-storage/email_images/youtube.svg">
+                    </a>
+                  </div>
+                  <div class="link">
+                    <a href="https://t.me/mindlyspace">
+                      <img src="https://storage.googleapis.com/mindly-picture-storage/email_images/telegram.svg">
+                    </a>
+                  </div>
+                </div class="link">
+                <div>
+                  <div class="link">
+                    <a href="https://www.facebook.com/mindlyspace/">
+                      <img src="https://storage.googleapis.com/mindly-picture-storage/email_images/facebook.svg">
+                    </a>
+                  </div>
+                  <div class="link">
+                    <a href="https://vm.tiktok.com/ZMdVp1GUX/">
+                      <img src="https://storage.googleapis.com/mindly-picture-storage/email_images/tik-tok%201.svg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        </tr>
+      </table>
+      <div class="desktop-image">
+        <img width="300" src="https://storage.googleapis.com/mindly-picture-storage/email_images/Person.svg">
+      </div>
+    </div>
+  </block>
+</extends>
