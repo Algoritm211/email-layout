@@ -14,28 +14,7 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
-
-@font-face {
-	font-family: 'proxima_nova_rgregular';
-	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
-	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
-		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
-		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'proxima_nova_rgbold';
-	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
-	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
-		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
-		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 @media (max-width: 500px) {
   #main {
@@ -53,7 +32,7 @@
 }
 
 * {
-  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -108,7 +87,7 @@ a {
 .link {
   display: flex;
   justify-content: flex-start;
-  padding: 15px 15px 15px 0;
+  padding: 8px 15px 8px 0;
 }
 
 @media (min-width: 700px) {
