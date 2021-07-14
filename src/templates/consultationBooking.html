@@ -1,6 +1,6 @@
 ---
 username: 'Nika'
-datetime: '10 июля в 09:30 (Cуббота)'
+datetime: '10 июля в 09:30'
 psychologist: 'Татьяна Ремесник'
 duration: '50'
 consultationLink: 'https://videochat.mindly.cc/0n9aX3'
@@ -10,29 +10,42 @@ consultationLink: 'https://videochat.mindly.cc/0n9aX3'
     <div class="main-block">
       <table class="table">
         <tr>
-          <td style="font-size: 20px; line-height: 60px; font-weight: bold;">
-            Консультация забронирована
+          <td>
+            <div style="margin-bottom: 10px;">
+              <img width="150" src="https://storage.googleapis.com/mindly-picture-storage/email_images/service_icon.png"
+                alt="service_icon">
+            </div>
           </td>
         </tr>
         <tr>
-          <td style="font-size: 18px; line-height: 24px;">
+          <td style="font-size: 20px; line-height: 60px; font-weight: bold;">
             <div style="margin-bottom: 24px;">
-              Здравствуйте {{ page.username }}
+              Консультация забронирована
             </div>
           </td>
         </tr>
         <tr style="font-size: 18px; line-height: 24px;">
           <td>
             <div style="margin-bottom: 24px;">
-              <div>Дата и время: <b>{{page.datetime}}</b></div>
+              <div>
+                Клиент: <b>{{ page.username }}</b>
+              </div>
+              <div>Дата: <b>{{page.datetime}}</b></div>
               <div>Специалист: <b>{{page.psychologist}}</b></div>
-              <div>Длительность консультации: <b>{{page.duration}}</b></div>
+              <div>Длительность: <b>{{page.duration}} минут</b></div>
+              </div>
+              </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="margin-bottom: 24px;">
+                    Отмена или перенос консультации возможен не позднее, чем за сутки.
             </div>
           </td>
         </tr>
         <tr style="font-size: 18px; line-height: 24px;">
           <td>
-            <div style='margin-bottom: 48px;'>
+            <div style='margin-bottom: 24px;'>
               <b>Чтобы начать онлайн сессию, воспользуйтесь ссылкой:</b>
               <div>
                 <a href="{{ page.consultationLink }}">{{ page.consultationLink }}</a>
@@ -51,7 +64,7 @@ consultationLink: 'https://videochat.mindly.cc/0n9aX3'
         <tr style="font-size: 16px; line-height: 24px;">
           <td>
             <div class="footer-info">
-              <div style="margin-right: 20px; margin-bottom: 16px;">
+              <div style="margin-right: 80px; margin-bottom: 16px; margin-top: 8px;">
                 <div>Ул. Крещатик 10</div>
                 <div>г. Киев, 01001</div>
                 <div>Сайт <a href="https://mindly.cc/">mindly.cc</a></div>
@@ -95,22 +108,19 @@ consultationLink: 'https://videochat.mindly.cc/0n9aX3'
                   <div class="link">
                     <a href="https://vm.tiktok.com/ZMdVp1GUX/">
                       <img style="display:block" width=24
-                        src="https://storage.googleapis.com/mindly-picture-storage/email_images/tik-tok%201.png">
+                        src="https://storage.googleapis.com/mindly-picture-storage/email_images/tik-tok3x.png">
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
-          </td>
-          <td>
+    </div>
+    </td>
+    <td>
 
-          </td>
-        </tr>
-      </table>
-      <div class="desktop-image">
-        <img width="250" src="https://storage.googleapis.com/mindly-picture-storage/email_images/Person.png">
-      </div>
+    </td>
+    </tr>
+    </table>
     </div>
   </block>
 </extends>
