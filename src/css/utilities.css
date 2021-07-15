@@ -16,10 +16,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
+/* For user */
 @media (max-width: 500px) {
   #main {
     display: flex;
-    background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/Mobile%20bg.png) center center/cover no-repeat;
+    background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/Mobilebgadmin-min.png) center center/cover no-repeat;
+    /* background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/Mobile%20bg.png) center center/cover no-repeat; */
   }
 }
 
@@ -27,7 +29,8 @@
  #main {
    display: flex;
    align-items: center;
-   background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/web%20bg.png) center center/cover no-repeat;
+   background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/webbgadmin-min.png) center center/cover no-repeat;
+   /* background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/web%20bg.png) center center/cover no-repeat; */
   }
 }
 
@@ -113,3 +116,7 @@ a {
     padding: 55px 16px;
   }
 }
+
+
+
+/* For admin */
