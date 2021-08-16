@@ -21,7 +21,7 @@
   #main {
     display: flex;
     /* background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/Mobilebgadmin-min.png) center center/cover no-repeat; */
-    background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/Mobile%20bg.png) center center/cover no-repeat;
+    background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/user_mobile_bg.png) center center/cover no-repeat;
   }
 }
 
@@ -30,7 +30,7 @@
    display: flex;
    align-items: center;
    /* background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/webbgadmin-min.png) center center/cover no-repeat; */
-   background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/web%20bg.png) center center/cover no-repeat;
+   background: url(https://storage.googleapis.com/mindly-picture-storage/email_images/user_desktop_bg.png) center center/cover no-repeat;
   }
 }
 
